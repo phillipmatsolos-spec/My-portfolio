@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phillip Matsolo - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-white">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 bg-zinc-950 border-b border-zinc-800 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+      <h1 class="text-2xl font-semibold">Phillip Matsolo</h1>
+      <div class="hidden md:flex gap-8">
+        <a href="#about" class="hover:text-emerald-400 transition">About</a>
+        <a href="#skills" class="hover:text-emerald-400 transition">Skills</a>
+        <a href="#contact" class="hover:text-emerald-400 transition">Contact</a>
+      </div>
+      <a href="#contact" 
+         class="bg-emerald-500 hover:bg-emerald-600 px-6 py-2 rounded-full font-medium transition">
+        Get in touch
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="min-h-screen flex items-center pt-20">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-6xl md:text-7xl font-semibold leading-tight">
+          Hi, I'm <span class="text-emerald-400">Phillip Matsolo</span>
+        </h2>
+        <p class="text-2xl text-zinc-400 mt-4">Full-Stack Developer & Designer</p>
+        <p class="text-zinc-400 mt-6 max-w-md">
+          Passionate about building beautiful, functional websites and applications.
+        </p>
+        <div class="mt-10 flex gap-4">
+          <a href="#contact" 
+             class="bg-white text-zinc-950 px-8 py-4 rounded-2xl font-semibold hover:scale-105 transition">
+            Let's work together
+          </a>
+          <a href="https://github.com/phillipmatsolos-spec" target="_blank"
+             class="border border-white px-8 py-4 rounded-2xl font-semibold hover:bg-white hover:text-zinc-950 transition">
+            View GitHub
+          </a>
+        </div>
+      </div>
+      
+      <!-- Replace with your photo -->
+      <div class="relative">
+        <img src="https://via.placeholder.com/600x600/10b981/ffffff?text=Your+Photo" 
+             alt="Your photo"
+             class="rounded-3xl shadow-2xl mx-auto md:mx-0 w-full max-w-md">
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="py-24 bg-zinc-900">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-semibold text-center mb-12">About Me</h2>
+      <div class="max-w-3xl mx-auto text-zinc-400 leading-relaxed text-lg">
+        <p class="mb-6">
+          Hey, I'm Phillip - a self-taught JavaScript developer from Johannesburg, South Africa. 
+  What started as late-night curiosity (watching YouTube tutorials after work) quickly turned into a full-blown obsession with building things that actually work and feel good to use. 
+  I've taught myself everything from vanilla JavaScript to modern tools like React and Next.js, and I genuinely love turning ideas into clean, fast web experiences.
+</p>
+        </p>
+        <p>
+          Currently open to new opportunities and collaborations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-semibold text-center mb-12">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Add or remove skills as needed -->
+        <div class="bg-zinc-900 p-6 rounded-3xl flex flex-col items-center text-center hover:scale-105 transition">
+          <i class="fa-brands fa-html5 text-5xl text-orange-500 mb-4"></i>
+          <p class="font-semibold">HTML5</p>
+        </div>
+        <div class="bg-zinc-900 p-6 rounded-3xl flex flex-col items-center text-center hover:scale-105 transition">
+          <i class="fa-brands fa-css3-alt text-5xl text-blue-500 mb-4"></i>
+          <p class="font-semibold">CSS3 / Tailwind</p>
+        </div>
+        <div class="bg-zinc-900 p-6 rounded-3xl flex flex-col items-center text-center hover:scale-105 transition">
+          <i class="fa-brands fa-js text-5xl text-yellow-400 mb-4"></i>
+          <p class="font-semibold">JavaScript</p>
+        </div>
+        <div class="bg-zinc-900 p-6 rounded-3xl flex flex-col items-center text-center hover:scale-105 transition">
+          <i class="fa-brands fa-react text-5xl text-cyan-400 mb-4"></i>
+          <p class="font-semibold">React / Next.js</p>
+        </div>
+        <!-- Add more skills here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-zinc-900">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-semibold text-center mb-12">Get In Touch</h2>
+      
+      <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+        <!-- Form -->
+        <form action="https://formsubmit.co/your-email@gmail.com" method="POST" class="space-y-6">
+          <input type="text" name="name" placeholder="Your name" required
+                 class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-emerald-400">
+          
+          <input type="email" name="email" placeholder="Your email" required
+                 class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-emerald-400">
+          
+          <textarea name="message" rows="5" placeholder="Your message" required
+                    class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-emerald-400"></textarea>
+          
+          <button type="submit"
+                  class="w-full bg-emerald-500 hover:bg-emerald-600 py-4 rounded-2xl font-semibold text-lg transition">
+            Send Message
+          </button>
+          
+          <!-- Hidden fields for Formsubmit -->
+          <input type="hidden" name="_subject" value="New Portfolio Message!">
+          <input type="hidden" name="_next" value="https://your-portfolio.vercel.app/thanks.html">
+        </form>
+
+        <!-- Contact info -->
+        <div class="space-y-8">
+          <div>
+            <p class="text-emerald-400 text-sm">EMAIL</p>
+            <a href="mailto:phillipmatsolos@gmail.com" class="text-2xl hover:text-emerald-400">phillipmatsolos@gmail.com</a>
+          </div>
+          <div>
+            <p class="text-emerald-400 text-sm">LINKEDIN</p>
+            <a href="https://linkedin.com/in/phillip-undefined-701a833b4/" target="_blank" class="text-2xl hover:text-emerald-400">linkedin.com/in/phillip-undefined-701a833b4/</a>
+          </div>
+          <div>
+            <p class="text-emerald-400 text-sm">GITHUB</p>
+            <a href="https://github.com/phillipmatsolos-spec" target="_blank" class="text-2xl hover:text-emerald-400">github.com/phillipmatsolos-spec</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 border-t border-zinc-800 text-center text-zinc-500">
+    <p>© 2026 Phillip Matsolo • Built with ❤️ and Tailwind</p>
+  </footer>
+
+  <script>
+    // Tailwind script
+    tailwind.config = {
+      content: ["./**/*.{html,js}"],
+      theme: { extend: {} }
+    }
+  </script>
+</body>
+</html>
